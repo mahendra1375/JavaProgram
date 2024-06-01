@@ -1,0 +1,83 @@
+Day1: Variable and DataTypes
+
+-----------------
+
+Variable- It is container which hold some data
+
+e.g int x=100   x is variable in this example
+
+
+Data Types
+------------
+Data type represent type of data
+
+1. Premitive data types
+   Byte, Short, int, Long-----> number without decimal
+   Float, Double--------------> Decimal Number
+   Char-----------------------> Single charater
+   boolean--------------------> true/false
+
+2. non premitive data types
+
+   String
+   ArrayList
+   Hashmap
+   HashSet etc.....
+
+A1
+---------------------------------------------------------------------------------------------------
+Operators
+Types of operators
+-----------------
+
+Arithmatic Operators +-*/%
+Ralational/Comparison Operators < <= > >= == !=
+Logical Operators && \\ !
+Increment/Decrement operators ++ , --
+Assignment Operators = += -= *= /= %=
+Conditional/ternery operator ?:
+
+
+
+A2
+---------------------------------------------------------------------------------------------------
+Control Statements
+
+1. Conditional Statement
+2. Looping/iterative statement
+3. Jumping Statement
+
+
+Condtional Statement
+1) if
+2) if else 
+3) nested if else
+4) switch case
+
+Looping statements
+1) While loop; --------------------------if don't know how many times need to execute
+2) Do while loop------------------------ if need to execute once withou checking the condition
+3) For Loop------------------------------if don't know how many times need to execute
+4) Enhanced For Loop
+
+Jumping statements
+1)Break
+2)Continue
+
+
+
+A3
+---------------------------------------------------------------------------------------------------
+Arrays
+------------
+Arrays: Array is collection of element/values of same datatype
+
+Types of arrays
+1) Single Dimentional Array
+2) Double Dimentional Array
+
+A4
+-----------------------------------------------------------------------------------------------------
+Searching and sorting of an array
+
+
