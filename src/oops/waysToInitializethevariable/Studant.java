@@ -1,14 +1,13 @@
 package oops.waysToInitializethevariable;
 
 public class Studant {
-    int studentID=0;
+    int studentID;
     String StudentFirstName;
     String StudentLastName;
 
 
     //Method to initialize variable
     public void intiaziseStudentData(int id, String Fname, String LastName){
-        Studant std1= new Studant(103,"Sanket","Karpe");
         studentID=id;
         StudentFirstName=Fname;
         StudentLastName=LastName;
@@ -22,11 +21,11 @@ public class Studant {
         System.out.println("StudenID: "+StudentLastName);
     }
 
-    //Constructor to initialize variables
+    /*/Constructor to initialize variables
     public Studant(int id1, String FirstName, String LastNamee){
 
         studentID=id1;
         StudentFirstName=FirstName;
         StudentLastName=LastNamee;
-    }
+    }*/
 }
