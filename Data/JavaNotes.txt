@@ -77,7 +77,7 @@ Types of arrays
 2) Double Dimentional Array
 
 A4
------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
 Searching and sorting of an array
 
 A5
@@ -89,5 +89,77 @@ String Methods
 4. Substring
 
 
+------------------------------------------------------------------------------------------------
+Oops concept.
+
+Class
+Object
+Inheritance
+Poymorphism
+Abstraction
+Encapsulation
+
+Class- 1.Collection of variables and methods
+       2.Class is logical entity.
+       3.Class not occupy memory
+
+
+Object: 1. Object is Instance of class. / Object is derived from class
+        2. Physical entity
+        3. Object occupy memory
+        4. Many object can be created for the single class
+
+
+
+                Method                                          constructor
+        1. Method name can be anything                  1. Constructor name and class name should same
+        2. Method may or may not return value           2. Constructor not return any value
+        3. We can write logic inside method             3. We cannot write any logic under constructor
+        4. need to call method by using object variable 4. As soon as object is crated, constructor called by default
+           by explicitly
+
+Polymorphism: One task can perform by multiple ways caleed as polymorphism
+Two Ways to achive polymorphism in java
+1. Method Overloading
+2. Method Overriding
+
+
+
+Encapsulation: 1.wrapping of data amd methods in single unit/class
+               2. In case of encapsulation we are not giving direct access to variable. To achive this we declare those variable as private
+               3. To access variable we need getters and setters method
+
+Inheritance: Aquiring properties of one class to another class called as inheritance
+
+
+Abstraction: Process of hiding implementation details and showing only functionality to user called as abstraction
+
+
+
+Static keyword: Static can be used to declare variable and method
+
+    Static Variable: if the variable is common in multiple object then we can declare it as static.
+                   1. It will save memory at the time of object creation
+                   2. Manipulation/Update the value of variable is easy
+
+    Static methods: If we declare method as static then we no need to create object of the class to invoke that method. Method can be invoked by using class name only
+
+
+Final Keyword:
+    1. Variable
+        If we declare variable as final then it's value cannot be changed
+
+        diff between final and static variable: if variable is final then it's value cannot be changed, but static variable value can be changed from any object
+
+    2. Method
+        Final method cannot override
+
+    3. Class
+        Final class cannot extends
+
+
+ Super Keyword:
+
+    if we have same variable, method in parent and child class. From child class if i have to invoke parent class method then super keword we have to use
 
 
