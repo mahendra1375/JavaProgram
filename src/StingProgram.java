@@ -1,4 +1,7 @@
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
 
 public class StingProgram {
 
@@ -10,6 +13,10 @@ public class StingProgram {
         //4. Remove junk/special characters from string
         //5. Count occurrences of character in string
         //6. count number of words in string
+        //7. Program for generate Random String
+        //8. Remove White spaces from string
+        //9. Count occurrences of character in a string
+
 
 
         //1. Reverse the string
@@ -71,7 +78,6 @@ public class StingProgram {
             for(int k=arr5[i].length()-1; k>=0;k--){
                 rev5=rev5+arr5[i].charAt(k);
             }
-
             str5[i]=rev5;
         }
         for(int x= str5.length-1; x>=0; x--){
@@ -117,7 +123,80 @@ public class StingProgram {
         String s9 = "Automation test Java";
         String[] arr9 = s9.split(" ");
         System.out.println("Count of words in string: " + arr9.length);
+
+
+        //7. Program for generate Random String
+
+        System.out.println("Generated random string is: "+generateRandomString(10));
+
+
+        //8. Remove White spaces from string
+
+        String s12 = "M ah  end    ra";
+        StringBuilder sb= new StringBuilder();
+
+        for(int i=0; i<=s12.length()-1;i++){
+            char currentchar=s12.charAt(i);
+
+            if(!Character.isWhitespace(currentchar)){
+                sb.append(currentchar);
+            }
         }
+
+        System.out.println("Removed spaces: "+sb);
+
+
+        // Hash Map
+
+        HashMap map= new HashMap();
+
+        map.put("First Name", "Mahendra");
+        map.put("Last Name", "Gaikwad");
+
+        System.out.println("First Name is: "+map.get("First Name"));
+        System.out.println("Last Name is: "+map.get("Last Name"));
+
+
+        //9. Count occurrences of character in a string
+
+        String str11= "MahendraShivajiGaikwad";
+
+        char []arr11= str11.toCharArray();
+
+        Map<Character, Integer> countcharocc= new HashMap<>();
+
+        for (char x:arr11){
+
+            if(countcharocc.containsKey(x)){
+                countcharocc.put(x,countcharocc.get(x)+1);
+            } else {
+                countcharocc.put(x,1);
+            }
+        }
+
+        //for( Map.Entry<Character, Integer> entry: countcharocc.entrySet()){
+          // System.out.println(entry.getKey() + ": " +entry.getValue());
+        //}
+
+        for (Object x:countcharocc.keySet()){
+            System.out.println(x+":"+countcharocc.get(x));
+        }
+
+
+    }
+
+
+    public static String generateRandomString(int lenght){
+        StringBuilder randomString= new StringBuilder();
+        Random rand = new Random();
+        String charaters= "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrst";
+
+        for (int i=0; i<lenght; i++){
+            int randomIndex= rand.nextInt(charaters.length());
+            randomString.append(charaters.charAt(randomIndex));
+        }
+        return randomString.toString();
+    }
 }
 
 

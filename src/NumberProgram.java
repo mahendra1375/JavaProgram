@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import java.util.*;
 
 public class NumberProgram {
 
@@ -23,6 +23,7 @@ public class NumberProgram {
     //19. find missing number in array
     //20. Find Largest number in array
     //21. Find lowest number in array
+    //22. Printing numbebrs ending with 7 or 8 from 0 to 100
 
 
 
@@ -275,6 +276,7 @@ public class NumberProgram {
 
         Arrays.sort(c);
 
+
         System.out.println("After Sorting");
         System.out.println(Arrays.toString(c));
         for(int x:c){
@@ -283,6 +285,7 @@ public class NumberProgram {
 
         //17. Searching how many times value is reapeted in array
 
+        //Approch1
         int ba[]= {10,20,30,10,40,10};
         int value=10;
         int reapeted_count=0;
@@ -294,6 +297,18 @@ public class NumberProgram {
         }
         System.out.println(value+" Reapeted "+reapeted_count+" times");
 
+        //Approch1
+        HashMap<Integer, Integer> countacc= new HashMap<>();
+        for(int p:ba){
+            if (countacc.containsKey(p)){
+                countacc.put(p, countacc.get(p)+1);
+            } else {
+                countacc.put(p,1);
+            }
+        }
+        for(Map.Entry<Integer, Integer> entry:countacc.entrySet()){
+            System.out.println(entry.getKey()+ ":"+entry.getValue());
+        }
 
         //18. Searching required value from array
         int ab[]= {10, 30, 40, 50 , 60 , 80};
@@ -332,7 +347,7 @@ public class NumberProgram {
 
         System.out.println("Missing number is: "+(Expectedsum-Number_sum));
 
-        //20. Find lowest number in array
+        //20. Find Highet number in array
 
         int ad[]={50,30,40,60,10};
         int max=ad[0];
@@ -358,10 +373,15 @@ public class NumberProgram {
 
         System.out.println("Min Value is: "+min);
 
+        //22. Printing numbebrs ending with 7 or 8 from 0 to 100
 
 
-
-
+        for(int j=0; j<=100;j++){
+            int digit=j%10;
+            if(digit==7 || digit==8){
+                System.out.println(j);
+            }
+        }
 
 
 
