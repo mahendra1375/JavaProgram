@@ -163,3 +163,25 @@ Final Keyword:
     if we have same variable, method in parent and child class. From child class if i have to invoke parent class method then super keword we have to use
 
 
+JAVA Collections:
+
+Interator>>>>>collection(I):1. List(I)
+                                 i)  ArrayList(c)----    .add(), addAll(), remove(),  removeall(), get(), Size(), isempty(), clear();
+                                 ii) LinkedList(c)q
+                            2. Set(I)
+                                 i)  Hashset(c)-------   .add(), addAll(), remove(),  removeall(), Size(), isempty(), clear();
+                                 ii) LinkedHashSet(c)
+
+
+Map>>>>>>>>>>>>>>>>>>>>>>   1. HashMap--------------------put(). get(), remove(), keyset(), values(); entrySet
+                            2. Linked HashMap
+
+
+Exceptions Handling
+
+Errors: 1.Logical Error
+        2.Syntax Error
+
+Exceptions: 1. Checked Exceptions: The exception with are identified by Java compiler
+
+            2. Unchecked Exceptions: The exceptions which are not identified by Java compiler
