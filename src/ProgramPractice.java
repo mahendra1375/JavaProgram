@@ -31,5 +31,28 @@ public class ProgramPractice {
         //22. Printing numbebrs ending with 7 or 8 from 0 to 100
 
 
+        String str= "MahendraShivajiGaikwad";
+        char str_arr[]=str.toCharArray();
+
+        HashMap<Character, Integer> hm = new HashMap<Character, Integer>();
+
+        for(int i=0;i<=str_arr.length-1;i++){
+            char currentchar= str_arr[i];
+            if(hm.containsKey(currentchar)){
+                hm.put(currentchar,hm.get(currentchar)+1);
+            } else {
+                hm.put(currentchar, 1);
+            }
+        }
+
+        for(Character x:hm.keySet()){
+            System.out.println(x+ ":" +hm.get(x));
+        }
+
+
+
+
+
+
     }
 }
